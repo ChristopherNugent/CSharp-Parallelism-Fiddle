@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // Configure F5 to build class library named 'ParallelTest'
+        {
+            "name": "Run Benchamrks",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "args": ["run",  "ParallelTest.csproj", "-c",  "release"],
+            "cwd": "${workspaceFolder}/",
+            "console": "integratedTerminal"
+        },
+    ]
+}
