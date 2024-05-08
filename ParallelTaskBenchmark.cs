@@ -5,13 +5,13 @@ namespace ParallelTest;
 public class ParallelTaskBenchmark
 {
 
-    [Params( 10, 50)]
+    [Params( 25, 50 )]
     public int TaskCount { get; set; }
 
-    [Params( 1_000_000, 50_000_000) ]
+    [Params( 10_000_000, 50_000_000) ]
     public int WorkCount { get; set; }
 
-    [Params( 1, 100 )]
+    [Params( 1, 0 )]
     public int IoDelayMs { get; set; } 
 
 
